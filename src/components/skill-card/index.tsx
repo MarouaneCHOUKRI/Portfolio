@@ -2,23 +2,10 @@ import { skeleton } from '../../utils';
 
 const SkillCard = ({
   loading,
-  skills,
 }: {
   loading: boolean;
   skills: string[];
 }) => {
-  const renderSkeleton = () => {
-    const array = [];
-    for (let index = 0; index < 12; index++) {
-      array.push(
-        <div key={index}>
-          {skeleton({ widthCls: 'w-16', heightCls: 'h-4', className: 'm-1' })}
-        </div>,
-      );
-    }
-
-    return array;
-  };
 
   return (
     <div className="card shadow-lg compact bg-base-100">
