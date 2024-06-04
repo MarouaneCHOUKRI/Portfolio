@@ -28,22 +28,17 @@ const SkillCard = ({
             {loading ? (
               skeleton({ widthCls: 'w-32', heightCls: 'h-8' })
             ) : (
-              <span className="text-base-content opacity-70">Tech Stack</span>
+              <span className="text-base-content opacity-70">À propos de moi</span>
             )}
           </h5>
         </div>
         <div className="p-3 flow-root">
-          <div className="-m-1 flex flex-wrap justify-center">
-            {loading
-              ? renderSkeleton()
-              : skills.map((skill, index) => (
-                  <div
-                    key={index}
-                    className="m-1 text-xs inline-flex items-center font-bold leading-sm px-3 py-1 badge-primary bg-opacity-90 rounded-full"
-                  >
-                    {skill}
-                  </div>
-                ))}
+          <div className="-m-1 flex flex-wrap opacity-50" style={{ textAlign: 'justify' }}>
+            Actuellement en Master 2 MIAGE, je suis un développeur passionné par les technologies numériques et l'innovation. J'ai une solide expérience en JavaScript, TypeScript, Node.js, et React.js, ainsi qu'une bonne connaissance des pratiques DevOps et Agile. Motivé par les défis techniques, je suis prêt à contribuer au développement de projets innovants et à apporter des solutions techniques de qualité.
+          </div>
+          <br/>
+          <div className="-m-1 flex flex-wrap opacity-50" style={{ textAlign: 'justify' }}>
+            Mon bon niveau d'anglais et mon excellent relationnel me permettent de m'intégrer facilement dans une équipe dynamique et de collaborer efficacement.
           </div>
         </div>
       </div>

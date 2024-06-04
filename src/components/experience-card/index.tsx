@@ -7,11 +7,13 @@ const ListItem = ({
   position,
   company,
   companyLink,
+  description
 }: {
   time: React.ReactNode;
   position?: React.ReactNode;
   company?: React.ReactNode;
   companyLink?: string;
+  description?: string;
 }) => (
   <li className="mb-5 ml-4">
     <div
@@ -24,6 +26,9 @@ const ListItem = ({
       <a href={companyLink} target="_blank" rel="noreferrer">
         {company}
       </a>
+    </div>
+    <div>
+      {description}
     </div>
   </li>
 );
@@ -65,7 +70,7 @@ const ExperienceCard = ({
             {loading ? (
               skeleton({ widthCls: 'w-32', heightCls: 'h-8' })
             ) : (
-              <span className="text-base-content opacity-70">Experience</span>
+              <span className="text-base-content opacity-70">Expériences</span>
             )}
           </h5>
         </div>
@@ -81,6 +86,7 @@ const ExperienceCard = ({
                     time={`${experience.from} - ${experience.to}`}
                     position={experience.position}
                     company={experience.company}
+                    description={'description'}
                     companyLink={
                       experience.companyLink
                         ? experience.companyLink

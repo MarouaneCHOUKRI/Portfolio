@@ -230,12 +230,12 @@ const GitProfile = ({ config }: { config: Config }) => {
                         experiences={sanitizedConfig.experiences}
                       />
                     )}
-                    {sanitizedConfig.certifications.length !== 0 && (
+                    {/* {sanitizedConfig.certifications.length !== 0 && (
                       <CertificationCard
                         loading={loading}
                         certifications={sanitizedConfig.certifications}
                       />
-                    )}
+                    )} */}
                     {sanitizedConfig.educations.length !== 0 && (
                       <EducationCard
                         loading={loading}
@@ -288,7 +288,7 @@ const GitProfile = ({ config }: { config: Config }) => {
               <footer
                 className={`p-4 footer ${BG_COLOR} text-base-content footer-center`}
               >
-                <div className="card compact bg-base-100 shadow">
+                <div className="card compact bg-base-100 shadow" style={{ borderRadius: 10 }}>
                   <Footer content={sanitizedConfig.footer} loading={loading} />
                 </div>
               </footer>
