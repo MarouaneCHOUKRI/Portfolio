@@ -75,6 +75,8 @@ export interface SanitizedExperience {
   from: string;
   to: string;
   companyLink?: string;
+  description1?: string;
+  description2?: string;
 }
 
 export interface SanitizedCertification {

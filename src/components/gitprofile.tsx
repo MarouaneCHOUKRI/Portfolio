@@ -65,8 +65,8 @@ const GitProfile = ({ config }: { config: Config }) => {
           headers: { 'Content-Type': 'application/vnd.github.v3+json' },
         });
         const repoData = repoResponse.data;
-
-        return repoData.items;
+        
+        return repoData.items.filter((id: any, idx: any, arr: any) => id.id != 810518484);
       } else {
         if (sanitizedConfig.projects.github.manual.projects.length === 0) {
           return [];
@@ -271,13 +271,13 @@ const GitProfile = ({ config }: { config: Config }) => {
                         }
                       />
                     )}
-                    {sanitizedConfig.blog.display && (
+                    {/* {sanitizedConfig.blog.display && (
                       <BlogCard
                         loading={loading}
                         googleAnalyticsId={sanitizedConfig.googleAnalytics.id}
                         blog={sanitizedConfig.blog}
                       />
-                    )}
+                    )} */}
                   </div>
                 </div>
               </div>

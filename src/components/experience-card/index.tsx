@@ -7,13 +7,15 @@ const ListItem = ({
   position,
   company,
   companyLink,
-  description
+  description1,
+  description2
 }: {
   time: React.ReactNode;
   position?: React.ReactNode;
   company?: React.ReactNode;
   companyLink?: string;
-  description?: string;
+  description1?: string;
+  description2?: string;
 }) => (
   <li className="mb-5 ml-4">
     <div
@@ -27,8 +29,10 @@ const ListItem = ({
         {company}
       </a>
     </div>
-    <div>
-      {description}
+    <div style={{ textAlign: 'justify' }} className='opacity-60'>
+      {description1}
+      <br/><br/>
+      {description2}
     </div>
   </li>
 );
@@ -86,7 +90,8 @@ const ExperienceCard = ({
                     time={`${experience.from} - ${experience.to}`}
                     position={experience.position}
                     company={experience.company}
-                    description={'description'}
+                    description1={experience.description1 || ""}
+                    description2={experience.description2 || ""}
                     companyLink={
                       experience.companyLink
                         ? experience.companyLink

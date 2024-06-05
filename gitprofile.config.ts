@@ -45,7 +45,7 @@ const CONFIG = {
             'Mon implication dans le développement de StudyPlace, une application mobile de recherche d\'espaces de coworking en France, a été une expérience de collaboration significative. Travaillant en équipe, nous avons conjugué nos efforts pour surmonter les défis techniques et créatifs inhérents au projet. Cette expérience a consolidé ma conviction en l\'importance de la communication efficace et du travail d\'équipe dans la réalisation de projets de haute qualité.',
           imageUrl:
             'https://img.freepik.com/vecteurs-libre/caractere-gens-affaires-detenant-pieces-puzzle_53876-32626.jpg?t=st=1717534278~exp=1717537878~hmac=3508acb4cb5b8e0aab6e32230d523344e577f6a6fa7b8c3121b51dba17be0742&w=1800',
-          link: 'https://example.com',
+          link: '',
         },
         {
           title: 'Résolution de problèmes',
@@ -60,7 +60,7 @@ const CONFIG = {
             'Le projet "Mnist-handwritten-digit-classification", axé sur l\'apprentissage supervisé pour classer des images de chiffres manuscrits, j\'ai fait preuve d\'une grande autonomie. En travaillant sur ce projet, j\'ai assumé la responsabilité de la conception, de l\'implémentation et de l\'évaluation des modèles de classification. Cette autonomie m\'a permis de gérer efficacement mon travail, de prendre des décisions stratégiques et d\'atteindre les objectifs du projet de manière proactive.',
           imageUrl:
             'https://img.freepik.com/vecteurs-libre/illustration-du-concept-autonomie_114360-12425.jpg?t=st=1717534409~exp=1717538009~hmac=9fe28243e6d3c9fc11b463bb698a529f8f60c143403e19c44806c9e4c86a5768&w=1380',
-          link: 'https://example.com',
+          link: '',
         },
       ],
     },
@@ -115,17 +115,21 @@ const CONFIG = {
   experiences: [
     {
       company: 'Sparklin',
-      position: 'Alternance - ',
+      position: 'Alternance - Développeur full stack',
       from: 'Septembre 2023',
       to: 'Août 2024', 
-      companyLink: 'https://example.com',
+      companyLink: 'https://www.sparklin.io/',
+      description1: 'Spécialisation dans la réalisation de tests E2E pour les applications mobiles et web, assurant une couverture complète et une expérience utilisateur sans faille. Gestion du cycle de vie des projets, incluant le recueil des besoins, l\'élaboration des cahiers des charges et le développement des fonctionnalités, avec une attention particulière à la qualité et à la performance des produits livrés.',
+      // description2: "- React, React Native, Jest, NestJS, TypeScript, SQL Server, Git, Docker, Github Action, Cypress, LambdaTest."
     },
     {
-      company: 'CS-LANE',
-      position: 'Stage - ',
+      company: 'Sparklin',
+      position: 'Stage - Développeur full stack',
       from: 'Avril 2023',
       to: 'Septembre 2023', 
-      companyLink: 'https://example.com',
+      companyLink: 'https://www.sparklin.io/',
+      description1: "Conception et gestion de projets d'applications mobiles et web : Recueil des besoins utilisateurs, élaboration de cahiers des charges détaillés, développement des fonctionnalités demandées, et réalisation de tests rigoureux pour assurer la qualité et la conformité aux spécifications.",
+      // description2: "- React, React Native, Jest, NestJS, TypeScript, SQL Server, Git, Docker."
     },
     {
       company: 'CS-LANE',
@@ -133,6 +137,8 @@ const CONFIG = {
       from: 'Avril 2022',
       to: 'Août 2022', 
       companyLink: 'https://cslane.com/',
+      description1: 'Développement d\'applications mobiles de mise en contact d\'utilisateurs avec des conducteurs réalisant des services de transport.',
+      // description2: '- React Native, Expo, Firebase, Google Maps Platform.'
     },
     {
       company: 'Département génie informatique - École Supérieure de Technologie d\'Oujda',
@@ -140,6 +146,8 @@ const CONFIG = {
       from: 'Mai 2021',
       to: 'Juin 2021',
       companyLink: 'http://esto.ump.ma/fr/labo-matsi',
+      description1: 'Création d\'un modèle d\'intelligence artificielle permettant la reconnaissance des caractères braille par l\'apprentissage profond du réseau de neurones convolutif.',
+      // description2: '- Python(TensorFlow/Keras), Tkinter, kaggle.'
     },
   ],
   certifications: [
@@ -147,42 +155,42 @@ const CONFIG = {
       name: 'Lorem ipsum',
       body: 'Lorem ipsum dolor sit amet',
       year: 'March 2022',
-      link: 'https://example.com',
+      link: '',
     },
   ],
   educations: [
     {
       institution: 'Université de Picardie Jules Verne d\'Amiens',
-      degree: 'Master Méthodes Informatiques Appliquées à la Gestion des Entreprises',
+      degree: 'Master - Méthodes Informatiques Appliquées à la Gestion des Entreprises',
       from: '2022',
       to: '2024',
     },
     {
       institution: 'Université de Picardie Jules Verne d\'Amiens',
-      degree: 'Licence 3 informatique',
+      degree: 'Licence 3 - informatique',
       from: '2021',
       to: '2022',
     },
     {
       institution: 'École Supérieure de Technologie d\'Oujda',
-      degree: 'Licence professionnelle Informatique décisionnelle',
+      degree: 'Licence professionnelle - Informatique décisionnelle',
       from: '2020',
       to: '2021',
     },
     {
       institution: 'École Supérieure de Technologie d\'Oujda',
-      degree: 'DUT Développeur d\'applications Informatiques',
+      degree: 'DUT - Développeur d\'applications Informatiques',
       from: '2018',
       to: '2020',
     },
   ],
   publications: [
     {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
+      title: 'ArchiWeb',
+      conferenceName: 'cd: kojio',
+      journalName: 'scdcs',
+      authors: 'TypeScript',
+      link: '',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     },
@@ -191,7 +199,7 @@ const CONFIG = {
       conferenceName: 'Conference Name',
       journalName: '',
       authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
+      link: '',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     },
