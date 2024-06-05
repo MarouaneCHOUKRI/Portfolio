@@ -71,7 +71,7 @@ const CONFIG = {
     imageURL: '',
   },
   social: {
-    linkedin: 'Marouane Choukri',
+    linkedin: 'marouane-choukri-570770245',
     twitter: '',
     mastodon: '',
     researchGate: '',
@@ -186,22 +186,30 @@ const CONFIG = {
   ],
   publications: [
     {
-      title: 'ArchiWeb',
-      conferenceName: 'cd: kojio',
-      journalName: 'scdcs',
-      authors: 'TypeScript',
+      title: 'Titre du projet : ArchiWeb',
+      conferenceName: 'Outils : TypeScript, MEAN STACK ',
+      journalName: 'Compétence : B.1. Conception des applications',
+      authors: '',
       link: '',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'Lors de ma participation au projet ArchiWeb, j\'ai été chargé de concevoir une application répondant aux besoins des utilisateurs tout en respectant les contraintes techniques. J\'ai travaillé en étroite collaboration avec l\'équipe pour définir les caractéristiques fonctionnelles et les interfaces nécessaires. Mon rôle consistait à sélectionner les meilleures options techniques pour optimiser la qualité tout en minimisant les coûts, assurant ainsi une expérience utilisateur fluide et efficace.'
     },
     {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
+      title: 'Titre du projet : Braille-Character-Recognition',
+      conferenceName: 'Outils : Python, keras',
+      journalName: 'Compétence : B.3. Tests, B.5. Production de la documentation',
+      authors: '',
+      link: '',
+      description:'Pendant le développement du projet Braille-Character-Recognition, j\'ai mené des tests rigoureux pour vérifier la conformité aux spécifications. J\'ai planifié et exécuté des tests unitaires, d\'intégration et de validation, en documentant soigneusement les résultats pour assurer la qualité du produit final.'
+    },
+    {
+      title: 'Titre du projet : StudyPlace',
+      conferenceName: 'Outils : JavaScript, React Native, Expo',
+      journalName: 'Compétence : A.10. Expérience utilisateur',
+      authors: '',
       link: '',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      'En contribuant au projet StudyPlace, j\'ai placé l\'utilisateur au cœur du développement. J\'ai soigneusement étudié leurs besoins, itéré sur les fonctionnalités et les interfaces pour garantir une expérience intuitive et efficace. Cette approche axée sur l\'utilisateur a conduit à une application conviviale, répondant parfaitement aux attentes des utilisateurs et renforçant leur engagement.'
     },
   ],
   // Display articles from your medium or dev account. (Optional)
