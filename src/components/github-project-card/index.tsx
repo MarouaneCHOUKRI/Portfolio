@@ -23,6 +23,17 @@ const GithubProjectCard = ({
     return;
   }
 
+  const getDescriptionCompetences = (items: string): JSX.Element => {
+    return (
+      <ul style={{ paddingTop: '5px'}}>
+        {items.split('-').map((item, index) => (
+          <li key={index} style={{ color: '#333956' }}>{item}</li>
+        ))}
+      </ul>
+    );
+  };
+  
+
   const renderSkeleton = () => {
     const array = [];
     for (let index = 0; index < limit; index++) {
@@ -107,7 +118,7 @@ const GithubProjectCard = ({
               {item.description.split('/')[0]}
             </p>
             <p className="mb-5 mt-1 text-base-content text-opacity-60 text-sm" style={{ textAlign :'justify' }}>
-              <b>Compétences :</b>{item.description.split('/')[1]}
+              <b>Compétences :</b>{getDescriptionCompetences(item.description.split('/')[1])}
             </p>
           </div>
           <div className="flex justify-between text-sm text-base-content text-opacity-60 truncate">

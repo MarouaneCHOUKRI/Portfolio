@@ -76,7 +76,7 @@ const ThemeChanger = ({
                 className="btn btn-ghost m-1 normal-case opacity-50 text-base-content"
               >
                 <AiOutlineControl className="inline-block w-5 h-5 stroke-current md:mr-2" />
-                <span className="hidden md:inline">Changé de thème</span>
+                <span className="hidden md:inline">Modifier le thème</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 1792 1792"

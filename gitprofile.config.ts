@@ -116,7 +116,7 @@ const CONFIG = {
     {
       company: 'Sparklin',
       position: 'Alternance - Développeur full stack',
-      from: 'Septembre 2023',
+      from: 'Octobre 2023',
       to: 'Août 2024', 
       companyLink: 'https://www.sparklin.io/',
       description1: 'Spécialisation dans la réalisation de tests E2E pour les applications mobiles et web, assurant une couverture complète et une expérience utilisateur sans faille. Gestion du cycle de vie des projets, incluant le recueil des besoins, l\'élaboration des cahiers des charges et le développement des fonctionnalités, avec une attention particulière à la qualité et à la performance des produits livrés.',
@@ -135,7 +135,7 @@ const CONFIG = {
       company: 'CS-LANE',
       position: 'Stage - Développeur mobile',
       from: 'Avril 2022',
-      to: 'Août 2022', 
+      to: 'Juin 2022', 
       companyLink: 'https://cslane.com/',
       description1: 'Développement d\'applications mobiles de mise en contact d\'utilisateurs avec des conducteurs réalisant des services de transport.',
       // description2: '- React Native, Expo, Firebase, Google Maps Platform.'
@@ -161,7 +161,7 @@ const CONFIG = {
   educations: [
     {
       institution: 'Université de Picardie Jules Verne d\'Amiens',
-      degree: 'Master - Méthodes Informatiques Appliquées à la Gestion des Entreprises',
+      degree: 'Master - Méthodes informatiques appliquées à la gestion des entreprises',
       from: '2022',
       to: '2024',
     },
@@ -179,7 +179,7 @@ const CONFIG = {
     },
     {
       institution: 'École Supérieure de Technologie d\'Oujda',
-      degree: 'DUT - Développeur d\'applications Informatiques',
+      degree: 'DUT - Développeur d\'applications informatiques',
       from: '2018',
       to: '2020',
     },
@@ -196,7 +196,7 @@ const CONFIG = {
     },
     {
       title: 'Titre du projet : Braille-Character-Recognition',
-      conferenceName: 'Outils : Python, keras',
+      conferenceName: 'Outils : Python, TensorFlow',
       journalName: 'Compétence : B.3. Tests, B.5. Production de la documentation',
       authors: '',
       link: '',
