@@ -4,7 +4,7 @@ import { skeleton } from '../../utils';
 import LazyImage from '../lazy-image';
 
 const handleExport = () => {
-  const cvLink = '../../../public/CV.pdf';
+  const cvLink = '../../../CV_MAROUANE_CHOUKRI.pdf';
   
   const link = document.createElement('a');
   link.href = cvLink;
