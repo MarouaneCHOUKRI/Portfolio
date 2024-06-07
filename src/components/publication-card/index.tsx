@@ -76,7 +76,7 @@ const PublicationCard = ({
   const renderPublications = () => {
     return publications.map((item, index) => (
       <a
-        className="card shadow-lg compact bg-base-100 cursor-pointer"
+        className="card shadow-lg compact bg-base-100"
         key={index}
         target="_blank"
         rel="noreferrer"
@@ -92,11 +92,11 @@ const PublicationCard = ({
                       {item.conferenceName}
                     </p>
                   )}
-                  {item.journalName && (
+                  {/* {item.journalName && (
                     <p className="text-base-content opacity-50 text-sm">
                       {item.journalName}
                     </p>
-                  )}
+                  )} */}
                   {item.authors && (
                     <p className="text-base-content opacity-50 text-sm">
                       Outils: {item.authors}
@@ -138,6 +138,10 @@ const PublicationCard = ({
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {loading ? renderSkeleton() : renderPublications()}
                   </div>
+                  {/* <div style={{  paddingTop: '20px', flexDirection: 'row', display: 'flex' }}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-5" style={{ color: '#606060' }}> <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" /> </svg>
+                    <span style={{ fontSize: 14, marginLeft: '3px' }} className="text-base-content opacity-60">Les compétences énumérées sur chaque projet proviennent de <a href='https://www.cigref.fr/wp/wp-content/uploads/2022/08/cigref_nomenclature_rh_des_profils_metiers_du_si_version_complete_2022.3.pdf' target="_blank"><u>la Nomenclature des profils métiers du SI du CIGREF.</u></a></span>
+                  </div> */}
                 </div>
               </div>
             </div>

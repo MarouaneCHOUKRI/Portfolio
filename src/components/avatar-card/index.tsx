@@ -3,11 +3,25 @@ import { Profile } from '../../interfaces/profile';
 import { skeleton } from '../../utils';
 import LazyImage from '../lazy-image';
 
+const handleExport = () => {
+  const cvLink = '../../../public/CV.pdf';
+  
+  const link = document.createElement('a');
+  link.href = cvLink;
+  link.download = 'CV_MAROUANE_CHOUKRI.pdf';
+  
+  document.body.appendChild(link);
+  
+  link.click();
+  
+  document.body.removeChild(link);
+}
+
 interface AvatarCardProps {
   profile: Profile | null;
   loading: boolean;
   avatarRing: boolean;
-  resumeFileUrl?: string;
+  // resumeFileUrl?: string;
 }
 
 /**
@@ -22,7 +36,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
   profile,
   loading,
   avatarRing,
-  resumeFileUrl,
+  // resumeFileUrl,
 }): JSX.Element => {
   return (
     <div className="card shadow-lg compact bg-base-100">
@@ -76,22 +90,30 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
               : profile.bio}
           </div>
         </div>
-        {resumeFileUrl &&
+        {/* {resumeFileUrl &&
           (loading ? (
             <div className="mt-6">
               {skeleton({ widthCls: 'w-40', heightCls: 'h-8' })}
             </div>
           ) : (
             <a
-              href={resumeFileUrl}
-              target="_blank"
+              onClick={(resumeFileUrl: any) => handleExport(resumeFileUrl)}
               className="btn btn-outline btn-sm text-xs mt-6 opacity-50"
               download
               rel="noreferrer"
             >
               Télécharger mon CV
             </a>
-          ))}
+          ))} */}
+
+        <a
+          onClick={() => handleExport()}
+          className="btn btn-outline btn-sm text-xs mt-6 opacity-50"
+          download
+          rel="noreferrer"
+        >
+          Télécharger mon CV
+        </a>
       </div>
     </div>
   );

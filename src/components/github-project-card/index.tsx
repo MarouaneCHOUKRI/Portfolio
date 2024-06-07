@@ -104,7 +104,10 @@ const GithubProjectCard = ({
               </div>
             </div>
             <p className="mb-5 mt-1 text-base-content text-opacity-60 text-sm">
-              {item.description}
+              {item.description.split('/')[0]}
+            </p>
+            <p className="mb-5 mt-1 text-base-content text-opacity-60 text-sm" style={{ textAlign :'justify' }}>
+              <b>Compétences :</b>{item.description.split('/')[1]}
             </p>
           </div>
           <div className="flex justify-between text-sm text-base-content text-opacity-60 truncate">
@@ -167,6 +170,10 @@ const GithubProjectCard = ({
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {loading ? renderSkeleton() : renderProjects()}
                   </div>
+                </div>
+                <div style={{  paddingTop: '20px', flexDirection: 'row', display: 'flex' }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-5" style={{ color: '#606060' }}> <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" /> </svg>
+                  <span style={{ fontSize: 14, marginLeft: '3px' }} className="text-base-content opacity-60">Les compétences énumérées sur chaque projet proviennent de <a href='https://www.cigref.fr/wp/wp-content/uploads/2022/08/cigref_nomenclature_rh_des_profils_metiers_du_si_version_complete_2022.3.pdf' target="_blank"><u>la Nomenclature des profils métiers du SI du CIGREF.</u></a></span>
                 </div>
               </div>
             </div>
