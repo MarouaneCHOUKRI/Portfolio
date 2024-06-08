@@ -29,6 +29,8 @@ import ExternalProjectCard from './external-project-card';
 // import BlogCard from './blog-card';
 import Footer from './footer';
 import PublicationCard from './publication-card';
+import LangueCard from './langues';
+import ContactCard from './contact-card';
 
 /**
  * Renders the GitProfile component.
@@ -241,6 +243,8 @@ const GitProfile = ({ config }: { config: Config }) => {
                         educations={sanitizedConfig.educations}
                       />
                     )}
+                    <LangueCard loading={loading}/>
+                    <ContactCard loading={loading}/>
                   </div>
                 </div>
                 <div className="lg:col-span-2 col-span-1">

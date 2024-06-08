@@ -290,7 +290,11 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `Adresse-email: <u>choukrimarouane10@gmail.com</u> / Téléphone: 06.26.17.74.87`,
+  footer: `Made with <a 
+  className="text-primary" href="https://github.com/arifszn/gitprofile"
+  target="_blank"
+  rel="noreferrer"
+  ><u>GitProfile</u></a> and ❤️`,
 
   enablePWA: true,
 };
